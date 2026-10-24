@@ -1,0 +1,12 @@
+{
+  "builtAt": "2026-10-24T13:41:22.583Z",
+  "build": "index-CVpwDLDn.js",
+  "saveVersion": 21,
+  "files": 97,
+  "bytes": 190643210,
+  "target": "PC browsers; landscape touch phones",
+  "knownLimits": [
+    "Physical iOS/Android devices still require human playtesting.",
+    "Saves and gallery are local to the browser and site address."
+  ]
+}

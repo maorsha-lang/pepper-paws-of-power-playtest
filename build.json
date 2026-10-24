@@ -1,12 +1,13 @@
 {
-  "builtAt": "2026-10-24T13:41:22.583Z",
-  "build": "index-CVpwDLDn.js",
+  "builtAt": "2026-10-24T16:37:01.086Z",
+  "build": "index-DEKNO-vs.js",
   "saveVersion": 21,
   "files": 97,
-  "bytes": 190643210,
-  "target": "PC browsers; landscape touch phones",
+  "bytes": 190658934,
+  "target": "PC browsers with keyboard/mouse or Xbox-compatible controllers; landscape touch phones",
   "knownLimits": [
     "Physical iOS/Android devices still require human playtesting.",
+    "Controller support uses the browser standard gamepad mapping.",
     "Saves and gallery are local to the browser and site address."
   ]
 }

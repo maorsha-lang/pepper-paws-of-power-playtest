@@ -1,17 +1,24 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="theme-color" content="#111620"><title>Pepper: Paws of Power</title><link rel="icon" href="data:,">  <script type="module" crossorigin src="./assets/index-CVpwDLDn.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DS875lWs.css">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><meta name="theme-color" content="#111620"><title>Pepper: Paws of Power</title><link rel="icon" href="data:,">  <script type="module" crossorigin src="./assets/index-DEKNO-vs.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DhnQtmM3.css">
 </head>
 <body>
   <main>
     <header><span class="brand">PEPPER <span>／</span> PAWS OF POWER</span><span id="tester-badge" hidden><span>TEST MODE</span><a href="./">MAIN GAME</a></span><span class="edition">DINNER AWAITS</span></header>
-    <section id="cabinet" class="menu-title menu-loading" aria-label="Pepper arcade game">
+    <section id="cabinet" class="menu-title menu-loading" data-button="cobalt" aria-label="Pepper arcade game">
       <img id="menu-backdrop" alt="" aria-hidden="true">
-      <canvas id="game" width="768" height="432" tabindex="0" aria-label="Pepper adventure. Controls below.">Your browser needs Canvas support to play Pepper.</canvas>
+      <canvas id="game" width="768" height="432" tabindex="0" aria-label="Pepper adventure. Optional Controls button at the upper left.">Your browser needs Canvas support to play Pepper.</canvas>
       <div id="level-entry-fade" aria-hidden="true" hidden></div>
       <p id="cinematic-line" hidden></p>
       <p id="pepper-subtitle" role="status" hidden></p>
+      <div id="opening-controls" hidden>
+        <div id="controls-launcher"><button id="controls" type="button" aria-expanded="false" aria-controls="control-guide">Controls</button><button id="dismiss-controls" type="button" aria-label="Dismiss controls for this run" title="Dismiss controls for this run">X</button></div>
+        <aside id="control-guide" aria-labelledby="control-guide-title" hidden>
+          <div id="control-guide-header"><h2 id="control-guide-title">CONTROLS</h2></div>
+          <div id="control-cards"></div>
+        </aside>
+      </div>
       <div id="overlay">
         <div id="title-art"><span class="eyebrow">IT IS TOO EARLY FOR WET FOOD.</span><h1>PEPPER<span>PAWS OF POWER</span></h1><p>A small cat. A very serious mission.</p></div>
         <h2 id="state-title" hidden></h2><p id="state-detail" hidden></p>
@@ -32,7 +39,7 @@
       <div id="creator-credit" class="creator-credit signature"><span class="credit-prefix">Created by</span> <span class="credit-name">Maor Shamir</span></div>
       <button id="exit-fullscreen" hidden aria-label="Exit fullscreen">EXIT FULLSCREEN</button>
     </section>
-    <div class="status"><span id="objective">ONE STREET. DINNER AWAITS.</span><div><button id="pause" disabled>PAUSE</button><button id="sound" aria-pressed="false">SOUND ON</button><button id="settings">SETTINGS</button><button id="gallery">PHOTOS</button><button id="tester">TESTER · F2</button><button id="controls" aria-expanded="false" aria-controls="control-guide">CONTROLS</button><button id="fullscreen">FULLSCREEN · F</button></div></div>
+    <div class="status"><span id="objective">ONE STREET. DINNER AWAITS.</span><div><button id="pause" disabled>PAUSE</button><button id="sound" aria-pressed="false">SOUND ON</button><button id="settings">SETTINGS</button><button id="gallery">PHOTOS</button><button id="tester">TESTER · F2</button><button id="fullscreen">FULLSCREEN · F</button></div></div>
     <dialog id="opening-panel" aria-labelledby="opening-title">
       <h2 id="opening-title"><span id="opening-hunger">The hunger rises</span><span id="opening-demand">Pepper demands food...</span></h2>
       <h2 id="opening-epilogue" hidden>The struggle begins</h2>
@@ -48,6 +55,7 @@
     </dialog>
     <dialog id="settings-panel" aria-labelledby="settings-title">
       <h2 id="settings-title">SETTINGS</h2>
+      <p id="controller-status" role="status">Connect an Xbox-compatible controller, then press a button to activate it.</p>
       <label for="master">Master volume <output for="master">80%</output></label><input id="master" name="master" type="range" min="0" max="100" step="5">
       <label for="music">Music volume <output for="music">55%</output></label><input id="music" name="music" type="range" min="0" max="100" step="5">
       <label for="sfx">SFX volume <output for="sfx">80%</output></label><input id="sfx" name="sfx" type="range" min="0" max="100" step="5">
@@ -59,7 +67,6 @@
       <button id="close-settings">DONE</button>
     </dialog>
     <p id="save-warning" role="status" hidden></p>
-    <footer id="control-guide" aria-label="Controls" hidden><span><kbd>A</kbd><kbd>D</kbd> MOVE</span><span><kbd>W</kbd><kbd>S</kbd> DEPTH</span><span><kbd>SPACE</kbd> JUMP</span><span><kbd>SHIFT</kbd> DODGE</span><span><kbd>LMB</kbd> / <kbd>J</kbd> CLAW</span><span><kbd>RMB</kbd> / <kbd>K</kbd> BITE</span><span><kbd>MMB</kbd> / <kbd>L</kbd> GRAB</span><span><kbd>ESC</kbd> PAUSE</span></footer>
     <p class="note">Street prototype · Provisional pixel art · Keyboard + mouse</p>
     <p id="accessible-status" class="sr-only" aria-live="polite"></p>
   </main>

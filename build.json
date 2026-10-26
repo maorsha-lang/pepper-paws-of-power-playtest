@@ -1,9 +1,9 @@
 {
-  "builtAt": "2026-10-25T20:29:23.139Z",
-  "build": "index-Dyg0Nder.js",
-  "saveVersion": 22,
+  "builtAt": "2026-10-26T08:09:48.478Z",
+  "build": "index-BFn4mErW.js",
+  "saveVersion": 23,
   "files": 103,
-  "bytes": 196104181,
+  "bytes": 196111478,
   "target": "PC browsers with keyboard/mouse or Xbox-compatible controllers; landscape touch phones",
   "knownLimits": [
     "Physical iOS/Android devices still require human playtesting.",
